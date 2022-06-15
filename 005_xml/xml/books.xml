@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+<?xml version="1.0" encoding="utf-8" ?>
+以上内容就是xml文件的声明
+version="1.0"   version 表示xml的版本
+encoding="utf-8"  encoding表示xml文件的本身编码
+-->
+
+<books> <!-- 这是 xml 注释 -->
+    <book id="SN123123413241"> <!-- book 标签描述一本图书 id 属性描述 的是图书 的编号 -->
+        <name>java 编程思想</name> <!-- name 标签描述 的是图书 的信息 -->
+        <author>华仔</author> <!-- author 单词是作者的意思 ，描述图书作者 -->
+        <price>9.9</price> <!-- price 单词是价格，描述的是图书 的价格 -->
+    </book>
+    <book id="SN12341235123"> <!-- book 标签描述一本图书 id 属性描述 的是图书 的编号 -->
+        <name>葵花宝典</name> <!-- name 标签描述 的是图书 的信息 -->
+        <author>班长</author> <!-- author 单词是作者的意思 ，描述图书作者 -->
+        <price>5.5</price><!-- price 单词是价格，描述的是图书 的价格 -->
+    </book>
+</books>
