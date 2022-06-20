@@ -26,8 +26,16 @@
         <servlet-name>HelloServlet2</servlet-name>
         <servlet-class>com.atguigu.servlet.HelloServlet2</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>HelloServlet3</servlet-name>
+        <servlet-class>com.atguigu.servlet.HelloServlet3</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloServlet2</servlet-name>
         <url-pattern>/hello2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HelloServlet3</servlet-name>
+        <url-pattern>/hello3</url-pattern>
     </servlet-mapping>
 </web-app>
