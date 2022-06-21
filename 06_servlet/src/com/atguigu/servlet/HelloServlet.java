@@ -13,6 +13,13 @@ public class HelloServlet implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
         System.out.println("2 init初始化方法");
+        // 1、可以获取 Servlet 程序的别名 servlet-name 的值
+        System.out.println("HelloServlet 程序的别名是:" + servletConfig.getServletName());
+//         2、获取初始化参数 init-param
+        System.out.println("初始化参数 username 的值是;" + servletConfig.getInitParameter("username"));
+        System.out.println("初始化参数 url 的值是;" + servletConfig.getInitParameter("url"));
+//         3、获取 ServletContext 对象
+        System.out.println(servletConfig.getServletContext());
     }
 
     @Override

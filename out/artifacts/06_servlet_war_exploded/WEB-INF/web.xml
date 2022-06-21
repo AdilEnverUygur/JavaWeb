@@ -9,6 +9,20 @@
         <servlet-name>HelloServlet</servlet-name>
         <!--servlet-class 是 Servlet 程序的全类名-->
         <servlet-class>com.atguigu.servlet.HelloServlet</servlet-class>
+        <!--init-param 是初始化参数-->
+        <init-param>
+            <!--是参数名-->
+            <param-name>username</param-name>
+            <!--是参数值-->
+            <param-value>root</param-value>
+        </init-param>
+        <!--init-param 是初始化参数-->
+        <init-param>
+            <!--是参数名-->
+            <param-name>url</param-name>
+            <!--是参数值-->
+            <param-value>jdbc:mysql://localhost:3306/test</param-value>
+        </init-param>
     </servlet>
 
     <!--servlet-mapping 标签给 servlet 程序配置访问地址-->
