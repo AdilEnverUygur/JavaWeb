@@ -3,20 +3,33 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <!-- servlet 标签给 Tomcat 配置 Servlet 程序 -->
+
+    <!--context-param是上下文参数(它属于整个web工程)-->
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>context</param-value>
+    </context-param>
+      <!--context-param是上下文参数(它属于整个web工程)-->
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>root</param-value>
+    </context-param>
+
+
+    <!-- servlet标签给Tomcat配置Servlet程序 -->
     <servlet>
-        <!--servlet-name 标签 Servlet 程序起一个别名（一般是类名） -->
+        <!--servlet-name标签 Servlet程序起一个别名（一般是类名） -->
         <servlet-name>HelloServlet</servlet-name>
-        <!--servlet-class 是 Servlet 程序的全类名-->
+        <!--servlet-class是Servlet程序的全类名-->
         <servlet-class>com.atguigu.servlet.HelloServlet</servlet-class>
-        <!--init-param 是初始化参数-->
+        <!--init-param是初始化参数-->
         <init-param>
             <!--是参数名-->
             <param-name>username</param-name>
             <!--是参数值-->
             <param-value>root</param-value>
         </init-param>
-        <!--init-param 是初始化参数-->
+        <!--init-param是初始化参数-->
         <init-param>
             <!--是参数名-->
             <param-name>url</param-name>
@@ -24,32 +37,78 @@
             <param-value>jdbc:mysql://localhost:3306/test</param-value>
         </init-param>
     </servlet>
-
-    <!--servlet-mapping 标签给 servlet 程序配置访问地址-->
+    <!--servlet-mapping标签给servlet程序配置访问地址-->
     <servlet-mapping>
-        <!--servlet-name 标签的作用是告诉服务器，我当前配置的地址给哪个 Servlet 程序使用-->
+        <!--servlet-name标签的作用是告诉服务器，我当前配置的地址给哪个Servlet程序使用-->
         <servlet-name>HelloServlet</servlet-name>
-        <!--url-pattern 标签配置访问地址 <br/>
-/ 斜杠在服务器解析的时候，表示地址为：http://ip:port/工程路径 <br/>
-/hello 表示地址为：http://ip:port/工程路径/hello <br/>
--->
+        <!--
+            url-pattern标签配置访问地址                                     <br/>
+               / 斜杠在服务器解析的时候，表示地址为：http://ip:port/工程路径          <br/>
+               /hello 表示地址为：http://ip:port/工程路径/hello              <br/>
+        -->
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
-
+    
+    
     <servlet>
         <servlet-name>HelloServlet2</servlet-name>
         <servlet-class>com.atguigu.servlet.HelloServlet2</servlet-class>
+
+        <!--init-param是初始化参数-->
+        <init-param>
+            <!--是参数名-->
+            <param-name>username</param-name>
+            <!--是参数值-->
+            <param-value>root2</param-value>
+        </init-param>
+        <!--init-param是初始化参数-->
+        <init-param>
+            <!--是参数名-->
+            <param-name>url</param-name>
+            <!--是参数值-->
+            <param-value>jdbc:mysql://localhost:3306/test2</param-value>
+        </init-param>
+
     </servlet>
     <servlet>
         <servlet-name>HelloServlet3</servlet-name>
         <servlet-class>com.atguigu.servlet.HelloServlet3</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ContextServlet</servlet-name>
+        <servlet-class>com.atguigu.servlet.ContextServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ContextServlet1</servlet-name>
+        <servlet-class>com.atguigu.servlet.ContextServlet1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContextServlet2</servlet-name>
+        <servlet-class>com.atguigu.servlet.ContextServlet2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ContextServlet1</servlet-name>
+        <url-pattern>/context1</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ContextServlet2</servlet-name>
+        <url-pattern>/context2</url-pattern>
+    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>HelloServlet2</servlet-name>
         <url-pattern>/hello2</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>HelloServlet3</servlet-name>
         <url-pattern>/hello3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContextServlet</servlet-name>
+        <url-pattern>/contextServlet</url-pattern>
     </servlet-mapping>
 </web-app>

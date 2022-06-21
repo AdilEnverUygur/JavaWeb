@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_CN">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <form action="http://localhost:8088/06_servlet/hello3" method="get">
+    <form action="http://localhost:8080/06_servlet/hello3" method="post">
+        <input type="hidden" name="action" value="login" />
+        <input type="hidden" name="username" value="root" />
         <input type="submit">
     </form>
 </body>
