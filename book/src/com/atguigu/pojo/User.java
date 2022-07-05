@@ -1,7 +1,6 @@
 package com.atguigu.pojo;
 
 public class User {
-
     private Integer id;
     private String username;
     private String password;
@@ -36,6 +35,26 @@ public class User {
     }
 
     public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
+    public User() {
+    }
+
+    public User(Integer id, String username, String password, String email) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
         this.email = email;
     }
 
