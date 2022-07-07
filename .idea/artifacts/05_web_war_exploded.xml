@@ -13,6 +13,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="05_web" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="druid-1.1.9" module-name="05_web" />
+          <element id="library" level="module" name="commons-beanutils-1.8.0" module-name="05_web" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/05_web/target/web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />

@@ -9,6 +9,12 @@
     </properties>
     <root id="archive" name="web-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="05_web:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="druid-1.1.9" module-name="05_web" />
+          <element id="library" level="module" name="commons-beanutils-1.8.0" module-name="05_web" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
