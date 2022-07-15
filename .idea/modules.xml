@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/05_xmll/05_xmll.iml" filepath="$PROJECT_DIR$/05_xmll/05_xmll.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_servlet/06_servlet.iml" filepath="$PROJECT_DIR$/06_servlet/06_servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/07_servlet/07_servlet.iml" filepath="$PROJECT_DIR$/07_servlet/07_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_jsp/08_jsp.iml" filepath="$PROJECT_DIR$/08_jsp/08_jsp.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/book/book.iml" filepath="$PROJECT_DIR$/book/book.iml" />
     </modules>
