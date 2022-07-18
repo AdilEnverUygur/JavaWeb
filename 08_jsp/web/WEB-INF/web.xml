@@ -6,7 +6,7 @@
     
     <servlet>
         <servlet-name>PringHtml</servlet-name>
-        <servlet-class>com.atguigu.servlet.PringHtml</servlet-class>
+        <servlet-class>com.atguigu.servlet.PrintHtml</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>PringHtml</servlet-name>
